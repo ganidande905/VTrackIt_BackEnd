@@ -29,7 +29,12 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "127.0.0.1",  #Ios Emulator
+    "10.0.2.2",   # Android Emulator
+    "172.20.10.2", #My hotspot
+    "localhost",
+]
 
 
 # Application definition

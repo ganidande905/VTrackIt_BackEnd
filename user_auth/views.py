@@ -11,6 +11,7 @@ otp_store = {}  # Temporary storage (Use DB in production)
 
 @csrf_exempt
 def register_api(request):
+    print("The register function is now running")
     if request.method == 'POST':
         data = json.loads(request.body)
 
